@@ -11,3 +11,7 @@ shift = int(input("Enter the shift value: "))
 mode = input("Enter 'encrypt' or 'decrypt': ")
 
 print(f"The result is: {utils.caesar_cipher(text, shift, mode)}")
+
+# Test 3: Printing fibonacci series
+index = int(input("Enter the index till which you want to see the fibonnaci series: "))
+utils.fibGen(index)
