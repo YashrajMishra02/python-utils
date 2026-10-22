@@ -35,3 +35,18 @@ def caesar_cipher(text, shift, mode='encrypt'):
             result += char
             
     return result
+
+# Day 3 code: Fibonnaci Series generator
+def fibGen(index):
+    zero = 0
+    first = 1
+    ans = 0
+    print(zero, end=' ')
+    print(first, end=' ')
+    i = 2
+    while i <= index:
+        ans = zero + first
+        print(ans, end=' ')
+        zero = first
+        first = ans
+        i+=1
