@@ -50,3 +50,26 @@ def fibGen(index):
         zero = first
         first = ans
         i+=1
+
+# Day 4 Code: Flatten Nested list using for loop
+def fltUsgFor(m):
+    flat = []
+    
+    for r in m:
+        for e in r:
+            flat.append(e)
+    
+    print(flat)
+
+# Day 4 Code: Flatten Nested list using nested list comprehension
+def fltUsgComp(m):
+    flat = [e for row in m for e in row]
+    return flat
+
+# Day 5 Code: Fibonnaci generator recursively
+def fibgen(num):
+    if num == 0 or num == 1:
+        return num
+    smalloutput1 = fibgen(num - 1)
+    smalloutput2 = fibgen(num - 2)
+    return smalloutput1 + smalloutput2
