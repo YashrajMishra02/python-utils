@@ -5,6 +5,7 @@
 - `prime_sieve(n)` — Find all primes up to n using Sieve of Eratosthenes
 - `caesar_cipher(text, shift, decrypt=False)` — Encode/decode Caesar cipher
 - `fibonacci_generator(n)` — Generate first n Fibonacci numbers
+- `flatten_nested_list(nested)` — Recursively flatten a nested list
   
 ## How to run
 ```bash
@@ -31,5 +32,10 @@ print(utils.caesar_cipher(text, shift, mode))
 index = 6
 utils.fibGen(index)
 # Output: [0, 1, 1, 2, 3, 5]
+
+# Flatten
+mylist = [[1,2,3],[4,5,6],[7,8,9]]
+utils.fltUsgFor(mylist)
+# Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 Built during **Month 1 (Day 10 checkpoint)** of my [12-month Data Science roadmap](https://github.com/YashrajMishra02/pythonLearning).
