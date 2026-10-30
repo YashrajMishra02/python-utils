@@ -73,3 +73,15 @@ def fibgen(num):
     smalloutput1 = fibgen(num - 1)
     smalloutput2 = fibgen(num - 2)
     return smalloutput1 + smalloutput2
+
+# Day 6 Code: most_common () function to find the most common element in a list
+from collections import Counter
+def mst_com(lst):
+    # return Counter(lst).most_common() # this will return the most common element in the list along with its count
+    return Counter(lst).most_common(1)[0][0] # this will return the most common element in the list
+
+
+# Day 7 Code: most_common () function to find the most common element in a string
+def mst_str(string):
+    # return Counter(string.split()).most_common() # this will return the most common element in the string along with its count
+    return Counter(string.split()).most_common(1)[0][0] # this will return the most common element in the string
