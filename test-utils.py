@@ -27,3 +27,11 @@ print(utils.fltUsgComp(m))
 # Test 5: Fibonnaci generator recursively
 number = int(input("Enter the index of which you want to see the fibonnaci number: "))
 print(f"The fibnacci index of {number} is {utils.fibgen(number)}")
+
+# Test 6: most_common () function to find the most common element in a list
+mylist = [1, 2, 3, 2, 4, 2, 5]
+print(f"The most common element is: {utils.mst_com(mylist)}")
+
+# Test 7: most_common () function to find the most common element in a string
+mystr = input("Enter a string to find the most common character: ")
+print(f"The most common element is: {utils.mst_str(mystr)}")
